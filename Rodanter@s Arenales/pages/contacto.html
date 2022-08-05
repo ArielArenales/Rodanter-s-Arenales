@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Rodanter@s|contacto</title>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <div class="container__grid">
+            <header class="encabezado">
+                <h1 class="animate__animated animate__heartBeat">RODANTER@S</h1>
+                <img class="logo" src="https://picsum.photos/seed/picsum/200/300" alt="logo sitio">
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="beneficios.html">Beneficios</a>
+                    <a href="">Contacto</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="viajes.html">Viajes</a>
+                </nav>
+                <h2>Contactos</h2>
+            </header>
+            <main>
+                <div>
+                    <form action="varlidar.php" method="get" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Contactanos ingresando los siguientes Datos</legend>
+                        <div>
+                            <label for="nombre"> Nombre Completo </label>
+                            <input id ="nombre" name="nombre" type="text" placeholder="Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
+                        </div>
+                        <div>
+                            <label for="fnac">Fecha de Nacimiento</label>
+                            <input id="fnac" name="fecha_nac" type="date" required>
+                            <input id="hnac" name="hora_nac" type="time" required>
+                        </div>
+                        <div>
+                            <label for="edad">Edad</label>
+                            <input id="edad" name="edad" type="number" min=1 max=100 required>
+                        </div>
+                        <div>
+                            <label for="prov">Provincia donde recide</label>
+                            <select name="provincia" id="prov">
+                                <option value="Caba">Capital Federal</option>
+                                <option value="Buenos Aires" selected>Bs. As.</option>
+                                <option value="Catamarca">Catamarca</option>
+                                <option value="Chaco">Chaco</option>
+                                <option value="Chubut">Chubut</option>
+                                <option value="Cordoba">Cordoba</option>
+                                <option value="Corrientes">Corrientes</option>
+                                <option value="Entre Rios">Entre Rios</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Jujuy">Jujuy</option>
+                                <option value="La Pampa">La Pampa</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Misiones">Misiones</option>
+                                <option value="Neuquen">Neuquen</option>
+                                <option value="Rio Negro">Rio Negro</option>
+                                <option value="Salta">Salta</option>
+                                <option value="San Juan">San Juan</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="Sgo. del Estero">Sgo. del Estero</option>
+                                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                <option value="Tucuman">Tucuman</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mail">Mail</label>
+                            <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                        </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>hacenos tu comentario</legend>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="escribe tu Comentario"></textarea>
+                        </fieldset>
+                        <div>
+                        <fieldset>
+                            <input id="enviar" type="submit" value="Enviar">
+                        </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <div class="publicidad">
+                <aside>
+                    <p> Espacio Publicitario </p>
+                </aside>
+            </div>
+
+            <footer>
+                <img src="../img/whats.png" alt="logo de whatsapp">
+                <p>11-1111-2222</p>
+                <h4> legales mas info</h4>
+                <div class="redesSociales">
+                <img src="../img/twitter.png" alt="logo twitter">
+                <img src="../img/face.png" alt="logo facebook">
+                <img src="../img/insta.png" alt="logo insta">
+                </div>
+            </footer>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container__grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "aside"
+                        "footer"
+   
+}
+
+.encabezado{
+    grid-area: header;
+  
+}
+
+.encabezado nav {
+    background-color: rgb(111, 240, 154);
+    display:flex;
+    flex-direction: line;
+    justify-content: space-evenly;
+    align-items: center;
+
+   
+}
+
+.encabezado{
+    background-image: linear-gradient(to right, #6aa1f3, #8cb1f4, #a9c1f4, #c3d2f5, #dce3f5);
+
+}
+
+.logo{
+    width: 50px;
+    width: 50px;
+}
+
+h1{
+    color: crimson;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quienesSomos{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: blue;
+}
+
+.resumenNosotros{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(15, 15, 15);
+}
+
+body{
+    background-image: url(../img/fondo\ tp\ 2.jpg)
+}
+
+.box1{
+    background-color: rgba(127, 255, 212, 0.455);
+}
+
+.box2{
+    background-color: rgba(137, 43, 226, 0.444);
+    border: solid 2px color black;
+}
+
+.publicidad{
+    background-color: rgba(255, 217, 0, 0.744);
+}
+
+.redesSociales{
+    width: 50;
+    height: 50;
+    overflow: hidden;
+}
+
+h2{
+    color: blueviolet;
+    background-color: aliceblue;
+}
+
+.seccion{
+    background-color: #ee6b6b;
+    display:flex;
+    flex-direction:column;
+}
+
+.contenedor galeria{
+    
+    width:100%;
+    height:150vh;
+    background-color: rgb(69, 145, 119);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows :auto;
+    gap:2%;
+    margin:2%;
+    
+   
+}
+
+footer{
+    background-color:rgb(236, 208, 123);
+    grid-area: footer;
+}
+footer img{
+    margin: 10px;
+    width: 5%;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .nav a {
+       
+       font-size: 1rem;
+       
+       }
+    .contenedor galeria {
+     
+      grid-template-columns: repeat(2,1fr);
+         
+       
+       }
+
+    
+    }
